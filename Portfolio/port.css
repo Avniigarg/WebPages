@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* section1 */
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.p1-header {
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding: 10px 0px;
+    font-size: 19px;
+}
+
+.header {
+    color: black;
+    font-weight: 700;
+    padding-right: 80px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .container {
+    padding-top: 102px;
+}
+
+a:active {
+    color: rgba(197, 169, 112, 0.356);
+    background-color: transparent;
+}
+
+.head-h1 {
+    font-size: 45px;
+    color: black;
+    flex-basis: 60%;
+    order: 2;
+}
+
+.head-border {
+    background-color: white;
+    background-image: url("C:\Users\avnig\OneDrive\Desktop\OIBSIP\TASK2\assets\head.png");
+    padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 5px 5px rgb(224, 216, 216);
+    z-index: 10;
+
+}
+
+#introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.intro-text {
+    font-size: 49px;
+    color: rgb(60, 58, 58);
+    padding: 71px 0px;
+    cursor: pointer;
+
+}
+
+.button {
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 800;
+    animation: bounce .3s infinite alternate;
+    border-radius: 14px;
+}
+
+.intro-img {
+    order: 2;
+    flex-basis: 26%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    color: rgb(244, 166, 166);
+    font-size: 70px;
+}
+
+/* end */
+
+
+/* section 2  */
+.button1 {
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    margin: 4px 2px;
+    font-weight: 800;
+    border-radius: 14px;
+}
+
+
+skills {
+    flex-direction: row;
+    min-height: 80vh;
+    padding-top: 5vmax;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 50px;
+}
+
+#skills img {
+    max-width: 100%;
+    width: 4vmax;
+    height: 4vmax;
+    margin: auto;
+    cursor: pointer;
+}
+
+.skill-div {
+    margin: 90px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vmax;
+    background: rgba(15, 15, 15, 0.097);
+    border-bottom: 1px solid rgba(245, 222, 179, 0.255);
+    border-top: 1px solid rgba(245, 222, 179, 0.255);
+    border-radius: 1vmax;
+    cursor: pointer;
+}
+
+.first-col,
+.second-col {
+    margin: auto;
+    display: flex;
+    gap: 4vmax;
+    transition: all 0.6s ease-in-out 0.4;
+}
+
+.first-col div,
+.second-col div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.093), rgba(255, 255, 255, 0));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 15vmax;
+    height: 12vmax;
+    border-radius: 1vmax;
+    transition: all 0.3s ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.first-col p,
+.second-col p {
+    font-size: 1.5vmax;
+    color: #010f20;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media (hover: hover) {
+
+    .first-col div:hover,
+    .second-col div:hover {
+        transition: all 0.2s ease-in-out 0.1s;
+        width: 15.5vmax;
+        height: 12.5vmax;
+    }
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+/*  end  */
+
+
+/* section3 */
+.box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.pro1 {
+    
+    width: 20%;
+    height: 30%;
+    border: 1px solid #ccc;
+    margin: 40px 0px;
+
+}
+
+.project-img {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+
+.project-text {
+    cursor: pointer;
+    font-size: 1.5vmax;
+    color: #010f20;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+@media (hover: hover) {
+
+    .pro1:hover,
+    .project-img:hover {
+        width: 15.5vmax;
+        height: 12.5vmax;
+        scroll-behavior: smooth;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+/* end */
+
+/* section 4 */
+.Footer-contact {
+    font-size: 17px;
+    background-color: whitesmoke;
+    padding-top: 50px;
+    font-weight: 100;
+}
+
+.footer-img {
+    width: 9%;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.inner-contact {
+    /* padding-left: 15px; */
+    text-align: initial;
+    padding: 60px 0px;
+}
+
+.contact-p {
+    font-size: 24px;
+}
+
+/* end */
+
+/* bounce */
+@keyframes bounce {
+    to {
+        transform: scale(1.2);
+    }
+}
